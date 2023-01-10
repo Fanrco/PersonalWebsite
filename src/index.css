@@ -1,13 +1,36 @@
+:root {
+  --davys-grey: #575653ff;
+  --nickel: #75756Cff;
+  --black: #00000000;
+  --darkgray: #111314ff;
+  --offwhite: rgb(216, 208, 207);
+  --dimgray: #6C6C6Cff;
+  }
+
+@font-face {
+  font-family: 'DIN';
+  src: local('DIN'), url(./fonts/DIN.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'DIN-Bold';
+  src: local('DIN-Bold'), url(./fonts/DIN-Bold.ttf) format('truetype');
+}
+
+
+h3{
+  padding: 0; margin: 0;
+  font-size: 24px;
+  font-family: 'DIN';
+}
+
 body {
+  font-size: 12px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'DIN';
+  background:  var(--darkgray);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
