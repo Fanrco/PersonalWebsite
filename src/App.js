@@ -28,7 +28,7 @@ function App() {
           <div id="leftBar"></div>
             <div id="showCase">
               <Routes>
-                <Route exact path='/' element={<Home updateText={setTitle}/>} />
+                <Route exact path='/home' element={<Home updateText={setTitle}/>} />
                 <Route exact path='/about' element={<About updateText={setTitle} />} />
                 <Route exact path='/projects' element={<Projects updateText={setTitle}/>} />
                 <Route exact path='/blog' element={<Blog updateText={setTitle}/>} />
