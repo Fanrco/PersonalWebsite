@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/francomiranda.com/static/css/main.0ca31e4d.css",
-    "main.js": "/francomiranda.com/static/js/main.51500335.js",
-    "static/media/face6.png": "/francomiranda.com/static/media/face6.e2132a7b9e53bf928a91.png",
-    "static/media/face5.png": "/francomiranda.com/static/media/face5.4bb0a79554b2449fde3e.png",
-    "static/media/face4.png": "/francomiranda.com/static/media/face4.1e4a16b0feacecc38759.png",
-    "static/media/face2.png": "/francomiranda.com/static/media/face2.bb961d1ff730db9641a4.png",
-    "static/media/face0.png": "/francomiranda.com/static/media/face0.5387b18ddb330028a939.png",
-    "static/media/face1.png": "/francomiranda.com/static/media/face1.90b4badc38bb6cd0201b.png",
-    "static/media/face3.png": "/francomiranda.com/static/media/face3.4be28817db515f54d2c5.png",
-    "static/media/DIN-Bold.ttf": "/francomiranda.com/static/media/DIN-Bold.24817c4932d10f06acd1.ttf",
-    "static/media/DIN.ttf": "/francomiranda.com/static/media/DIN.7f0f21a90a6f9e0acca1.ttf",
-    "static/media/book0.png": "/francomiranda.com/static/media/book0.e7629fd9959c6ed94530.png",
-    "static/media/book3.png": "/francomiranda.com/static/media/book3.2ac1ef029345f7441e49.png",
-    "static/media/book4.png": "/francomiranda.com/static/media/book4.88bb0d3df6ee5267cc30.png",
-    "static/media/book1.png": "/francomiranda.com/static/media/book1.cd64336f542e97965415.png",
-    "static/media/book2.png": "/francomiranda.com/static/media/book2.df06a98f3db497b74477.png",
-    "static/media/lang0.png": "/francomiranda.com/static/media/lang0.487dd72204e41b4dfb0c.png",
-    "static/media/lang1.png": "/francomiranda.com/static/media/lang1.4f97a6c49bb5e50f211f.png",
-    "index.html": "/francomiranda.com/index.html",
-    "main.0ca31e4d.css.map": "/francomiranda.com/static/css/main.0ca31e4d.css.map",
-    "main.51500335.js.map": "/francomiranda.com/static/js/main.51500335.js.map"
+    "main.css": "./static/css/main.c8481960.css",
+    "main.js": "./static/js/main.faa36a93.js",
+    "static/media/face6.png": "./static/media/face6.e2132a7b9e53bf928a91.png",
+    "static/media/face5.png": "./static/media/face5.4bb0a79554b2449fde3e.png",
+    "static/media/face4.png": "./static/media/face4.1e4a16b0feacecc38759.png",
+    "static/media/face2.png": "./static/media/face2.bb961d1ff730db9641a4.png",
+    "static/media/face0.png": "./static/media/face0.5387b18ddb330028a939.png",
+    "static/media/face1.png": "./static/media/face1.90b4badc38bb6cd0201b.png",
+    "static/media/face3.png": "./static/media/face3.4be28817db515f54d2c5.png",
+    "static/media/DIN-Bold.ttf": "./static/media/DIN-Bold.24817c4932d10f06acd1.ttf",
+    "static/media/DIN.ttf": "./static/media/DIN.7f0f21a90a6f9e0acca1.ttf",
+    "static/media/book0.png": "./static/media/book0.e7629fd9959c6ed94530.png",
+    "static/media/book3.png": "./static/media/book3.2ac1ef029345f7441e49.png",
+    "static/media/book4.png": "./static/media/book4.88bb0d3df6ee5267cc30.png",
+    "static/media/book1.png": "./static/media/book1.cd64336f542e97965415.png",
+    "static/media/book2.png": "./static/media/book2.df06a98f3db497b74477.png",
+    "static/media/lang0.png": "./static/media/lang0.487dd72204e41b4dfb0c.png",
+    "static/media/lang1.png": "./static/media/lang1.4f97a6c49bb5e50f211f.png",
+    "index.html": "./index.html",
+    "main.c8481960.css.map": "./static/css/main.c8481960.css.map",
+    "main.faa36a93.js.map": "./static/js/main.faa36a93.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ca31e4d.css",
-    "static/js/main.51500335.js"
+    "static/css/main.c8481960.css",
+    "static/js/main.faa36a93.js"
   ]
 }
