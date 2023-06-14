@@ -14,19 +14,21 @@ class TypeWriter extends React.Component{
 
     render(){
         
-        if(this.updated === 2){
+        if(this.updated === 1){
             this.newword = true;
             if(!this.running){
                 this.running = true;
-                this.interval = setTimeout(this.updateTitles, 50);
+                this.interval = setTimeout(this.updateTitles, 20);
                 //console.log(this);
             }
         }
         this.updated+=1;
         return (
             <div id="typeWriter">
+                <center>
                 <h3>{this.state.title}</h3>
                 <p>{this.state.subtitle}</p>
+                </center>
             </div>
         )
     }
@@ -75,7 +77,7 @@ class TypeWriter extends React.Component{
         this.updated = 0;
         if(keepRunning){
             this.running = true;
-            this.interval = setTimeout(this.updateTitles, 50);
+            this.interval = setTimeout(this.updateTitles, 20);
         }else{
             this.running = false;
         }

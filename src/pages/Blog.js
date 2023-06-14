@@ -1,25 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+function Blog({ updateText }) {
+  var flavorText = {
+    title: "BLOG POSTS",
+    subtitle: "WHAT'S ON MY MIND",
+  };
 
-
-function Blog({updateText}) {
-    var flavorText = {
-        title: "BLOG POSTS",
-        subtitle: "WHAT IM UP TO",
-    }
-
-    useEffect(() => {
-      updateText(flavorText);
-      console.log('set');
-    }, []);
+  useEffect(() => {
+    updateText(flavorText);
+    updateText(flavorText);
+    console.log("Blog");
+  }, []);
 
   return (
-    <div className="inner">
-      <center>
-        <h2>Blog posts coming soon!</h2>
-        </center>
-    </div>
-  )
-
+    <motion.div
+      className="inner"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <br/><br/><br/><br/>
+      <center><h2>Blog Posts coming soon</h2></center>
+    </motion.div>
+  );
 }
 
-export default Blog
+export default Blog;

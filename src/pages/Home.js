@@ -1,39 +1,35 @@
-import {faceAnim} from '../images/images'
-import { useState, useEffect } from 'react'
-import { asciiart } from '../textart/casper.js';
+import { useState, useEffect } from "react";
+import React from "react";
+import blacklogo from "../images/blacklogo.png";
+import { motion } from "framer-motion";
+import { Terrain } from "../components/Terrain"
 
+function Home({ updateText }) {
+  var flavorText = {
+    title: "FRANCO MIRANDA",
+    subtitle: "CREATIVE DEVELOPER",
+  };
 
-function Home({updateText}) {
-    var flavorText = {
-        title: "FRANCO MIRANDA",
-        subtitle: "CREATIVE DEVELOPER",
-    }
+  useEffect(() => {
+    updateText(flavorText);
+    updateText(flavorText);
+    console.log("Home");
+  }, []);
 
-    const [frame, setFrame] = useState(0);
-
-    useEffect(() => {
-        updateText(flavorText);
-    }, []);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setFrame((f) => (f + 1)%64);
-          
-        }, 100);
-    
-        return () => clearInterval(interval);
-      }, []);
-
-    return (
-        <div className="inner">
-            <div className="centeredDiv">
-            <center>
-            <img src={faceAnim[frame]} style={{maxWidth: "min(40vh, 75vw)"}} alt="Franco in Courier Bold"/>
-            </center>
-            </div>
+  return (
+    <motion.div
+      className="inner"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <center>
+        <div id="p5CanvasParent">
+          <Terrain />
         </div>
-    )
-
+      </center>
+    </motion.div>
+  );
 }
 
-export default Home
+export default Home;
