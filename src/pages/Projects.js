@@ -1,32 +1,30 @@
 import { useState, useEffect } from "react";
-import { projList, projCaps, projLinks } from "../images/images";
+import { projectObjs } from "../images/images";
 import { motion } from "framer-motion";
 
-function ProjectFormat({ pic, cap, link }) {
+function ProjectFormat({projectInfo}) {
   return (
-    <a href={link}>
+    <a href={projectInfo.link}>
       <div className="captionedProject">
         <div className="projImg">
-          <img href={link} src={pic} alt={cap} width="200px"></img>
+          <img href={projectInfo.link} src={projectInfo.image} alt={projectInfo.title} width="200px"></img>
         </div>
 
         <div className="projCap">
-          <h3 style={{ marginBottom: "20px" }}>{cap[0]}</h3>
-          <p>{cap[1]}</p>
+          <h3 style={{ marginBottom: "20px" }}>{projectInfo.title}</h3>
+          <p>{projectInfo.description}</p>
         </div>
       </div>
     </a>
   );
 }
 
-function ProjectList({ title, images, captions, links }) {
+function ProjectList({ projectObjs }) {
   const list = [];
-  for (let i = 0; i < images.length; i++) {
+  for (let i = 0; i < projectObjs.length; i++) {
     list.push(
       <ProjectFormat
-        pic={images[i]}
-        link={links[i]}
-        cap={captions[i]}
+        projectInfo={projectObjs[i]}
         key={i}
       />
     );
@@ -66,7 +64,7 @@ function Projects({ updateText }) {
       <br />
       <br />
       <center>
-        <ProjectList images={projList} captions={projCaps} links={projLinks} />
+        <ProjectList projectObjs={projectObjs} />
       </center>
     </motion.div>
   );
